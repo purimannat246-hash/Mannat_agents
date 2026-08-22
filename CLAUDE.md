@@ -42,6 +42,13 @@ conditions — Claude Code invokes the right one automatically based on what
 you ask for, or you can name one directly ("use the security-officer-agent
 to review this").
 
+**Want this team in every project, not just this one?** Run `./install.sh`
+from this repo's root (on the machine where you actually use Claude Code —
+not a cloud/remote session). It copies the 10 agents into `~/.claude/agents/`,
+which Claude Code loads for every project on that machine automatically. This
+repo stays the source of truth — edit an agent here, commit, then re-run
+`./install.sh` to sync your global copy.
+
 ## gstack (recommended)
 
 This project is set up to work with [gstack](https://github.com/garrytan/gstack) —
